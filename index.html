@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock ,Paper, Scissors/Kishore Kunal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body class="first">
+    <div class="container">
+  
+  
+      <header class="heading">
+        <h1 class="headtxt">
+          ROCK <br> 
+          PAPER <br>
+           SCISSORS</h1>
+        <div class="score">
+          <div class="scoretit">COMPUTER SCORE</div>
+          <div class="pcscore">0</div>
+        </div>
+        <div class="score">
+          <div class="scoretit">YOUR SCORE</div>
+          <div class="yourscore">0</div>
+        </div>
+      </header>
+
+
+       <div class="choices">
+        <div class="choice" data-option="rock" id="rock">
+          <div class="option rock">
+            <img src="./Images/icon-rock.png" alt="Rock" title="Rock">
+          </div>
+        </div>
+
+        <div class="choice" data-option="scissors" id="scissors"> 
+          <div class="option scissors">
+            <img src="./Images/icon-scissors.png" alt="Scissors" title="Scissors">
+          </div>
+        </div>
+
+        <div class="choice" data-option="paper" id="paper">
+          <div class="option paper">
+            <img src="./Images/icon-paper.png" alt="Paper" title="Paper">
+          </div>
+        </div>
+
+       </div>
+      
+
+        
+    </div>
+
+    <div class = "messages hidden">
+      <h2 class = messages__heading">YOU PICKED</h2>
+      <h2 class =messages__heading">PC PICKED</h2>
+      <div class="messages__result"></div>
+      <div class="messages__winner hidden">
+        <h3 calss="messages__test"></h3>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+      <div class="messages__result"></div>
+    </div>
+
+          
+
+    <button class="rules-btn" tabindex="1">RULES</button>
+    <div class="modal">
+      <div class="modal__container">
+        <button class="close-btn">
+          <img src="./Images/X.png" alt="Close Button" />
+        </button>
+        <img src="./Images/rules.png" alt="Rules Image" class="rules-img" />
+      </div>
+    </div>
+    <button class="next-btn hidden" onclick="nextButton()">Next</button>
+  
+    <script src="script.js"></script>
+
+    </body>
+</html>
