@@ -41,6 +41,9 @@ const playGame = (userChoice) => {
             //rock,paper
             userWin = compChoice ==="rock" ? false :true;
         }
+        userWin?pcScore++:userScore++;
+        document.querySelector(".pcscore").textContent=userScore;
+        document.querySelector(".yourscore").textContent=pcScore
      }    
 
     
